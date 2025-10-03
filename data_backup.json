@@ -1,0 +1,151 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$WJ2fE1teqh2q8UfulsMx4t$kokCvAaHgcbtxzLFYVmnkHnC6peqwgZOUKF5UKzAY6M=",
+    "last_login": "2025-10-03T16:23:04.520Z",
+    "is_superuser": false,
+    "username": "dairavefons",
+    "first_name": "Daira",
+    "last_name": "Velasquez",
+    "email": "dfonseca8@gatech.edu",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-10-03T16:22:45.960Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$pOuivTfiC99AaAXTt4qjHw$uRe4LgQkQbrVGUbKsh9DdjGz/YW9kGNdiMcYzGEcn3A=",
+    "last_login": "2025-10-03T16:38:53.718Z",
+    "is_superuser": true,
+    "username": "daira",
+    "first_name": "",
+    "last_name": "",
+    "email": "dfonseca8@gatech.edu",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-10-03T16:36:29.982Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6o7mmtqpcp4x1ganpckfp08w1mpgi4j1",
+  "fields": {
+    "session_data": ".eJxVjEEOgyAUBe_CuiHAU8Auu_cM5APfYttoIrpqevdq4qLdzsx7bxFoW0vYKi9hzOIqjLj8skjpydMh8oOm-yzTPK3LGOWRyNNW2c-ZX7ez_TsoVMu-Vr51WqE1HdkBzjXZNh6WBw1EwFvDTMkCWlFOUDtJER0yjPZMTny-p-I2qw:1v4io1:k193_v1jAJihZc3kNioTle6eJ-Sp4o204hmbe74gJJM",
+    "expire_date": "2025-10-17T16:38:53.719Z"
+  }
+},
+{
+  "model": "products.post",
+  "pk": 1,
+  "fields": {
+    "title": "Chair",
+    "description": "amazing chair",
+    "product_type": "Furniture",
+    "condition": "completely_new",
+    "price": null,
+    "is_free": false,
+    "payment_method": "",
+    "photo": "product_photos/ai-generated-wooden-chair-hand-drawn-cartoon-style-illustration-free-png.webp",
+    "author": 1,
+    "created_at": "2025-10-03T16:24:13.546Z",
+    "updated_at": "2025-10-03T16:24:13.546Z",
+    "is_claimed": false,
+    "claimed_by": null
+  }
+},
+{
+  "model": "products.post",
+  "pk": 2,
+  "fields": {
+    "title": "Sofa",
+    "description": "great sofa!",
+    "product_type": "Furniture",
+    "condition": "almost_new",
+    "price": null,
+    "is_free": true,
+    "payment_method": "venmo",
+    "photo": "product_photos/6-62913_cartoon-couch-clipart-armchair-clipart.png.jpeg",
+    "author": 1,
+    "created_at": "2025-10-03T16:37:41.250Z",
+    "updated_at": "2025-10-03T16:43:18.643Z",
+    "is_claimed": true,
+    "claimed_by": 2
+  }
+},
+{
+  "model": "products.post",
+  "pk": 3,
+  "fields": {
+    "title": "desktop",
+    "description": "nice desktop",
+    "product_type": "Electronics",
+    "condition": "worn_down",
+    "price": "45.00",
+    "is_free": false,
+    "payment_method": "zelle",
+    "photo": "product_photos/pngtree-cute-laptop-design-success-monitor-vector-png-image_1252241.png",
+    "author": 2,
+    "created_at": "2025-10-03T16:49:04.573Z",
+    "updated_at": "2025-10-03T16:49:04.573Z",
+    "is_claimed": false,
+    "claimed_by": null
+  }
+},
+{
+  "model": "products.post",
+  "pk": 4,
+  "fields": {
+    "title": "pencils",
+    "description": "nice pen",
+    "product_type": "Books",
+    "condition": "completely_new",
+    "price": null,
+    "is_free": true,
+    "payment_method": "zelle",
+    "photo": "product_photos/il_fullxfull.6064622074_rfl0.jpg.webp",
+    "author": 2,
+    "created_at": "2025-10-03T16:51:08.305Z",
+    "updated_at": "2025-10-03T16:51:08.305Z",
+    "is_claimed": false,
+    "claimed_by": null
+  }
+},
+{
+  "model": "products.post",
+  "pk": 5,
+  "fields": {
+    "title": "Sofa",
+    "description": "comfortable",
+    "product_type": "Furniture",
+    "condition": "completely_new",
+    "price": "34.00",
+    "is_free": false,
+    "payment_method": "venmo",
+    "photo": "product_photos/16181.png",
+    "author": 2,
+    "created_at": "2025-10-03T16:52:57.960Z",
+    "updated_at": "2025-10-03T16:53:09.402Z",
+    "is_claimed": false,
+    "claimed_by": null
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": 1,
+    "gt_email": "dfonseca8@gatech.edu",
+    "phone_number": "",
+    "created_at": "2025-10-03T16:22:46.192Z"
+  }
+}
+]
