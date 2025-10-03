@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - nestd{% endblock %}
+
+{% block content %}
+<style>
+    .about-container {
+        max-width: 800px;
+        margin: 60px auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .about-container h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .about-container h2 {
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .about-container p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .tagline {
+        text-align: center;
+        font-size: 1.3rem;
+        color: #7c9eb2;
+        font-weight: 500;
+        margin-bottom: 40px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .mission-statement {
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: 500;
+        color: #333;
+        margin: 30px 0;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+    }
+</style>
+
+<div class="about-container">
+    <h1>About Nestd</h1>
+    <p class="tagline">Furniture Shopping Made For You</p>
+
+    <div class="mission-statement">
+        What If The Person Right Next To You Had Exactly What You Needed For Your College Home?
+    </div>
+
+    <p style="text-align: center; color: #7c9eb2; font-size: 1.1rem; margin-bottom: 10px;">No More Complicated Marketplaces.</p>
+    <p style="text-align: center; color: #7c9eb2; font-size: 1.1rem;">Save Time, Stress & Money.</p>
+
+    <h2>Letter From the Founders</h2>
+    <p>Finding affordable furniture as college students was way harder than it should've been.</p>
+
+    <p>As roommates trying to furnish our dorms, we spent hours scrolling through Facebook Marketplace — only to find listings that were already gone, sellers who lived too far, or deals that felt a little too sketchy. Without a car and with packed class schedules, the whole thing started to feel like a full-time job we never signed up for.</p>
+
+    <p>It wasn't just frustrating — it made us realize there was no easy way for students to help each other out.</p>
+
+    <p>That's why we created Nestd: a platform where Georgia Tech students can buy and sell furniture on campus — no trust issues, no endless scrolling, no long commutes, and no awkward meetups.</p>
+
+    <p>We built Nestd to save students time, money, and stress. Because moving is already hard enough. Getting a couch shouldn't be.</p>
+</div>
+{% endblock %}

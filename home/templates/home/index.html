@@ -1,0 +1,289 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}nestd - Furniture Made Easy for GT Students{% endblock %}
+
+{% block content %}
+<style>
+    /* Hero Section */
+    .hero-section {
+        background: linear-gradient(135deg, #7c9eb2 0%, #9db4c4 100%);
+        padding: 80px 0;
+        text-align: center;
+        color: #000;
+        margin: -24px -12px 0 -12px;
+    }
+
+    .hero-section h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        line-height: 1.2;
+    }
+
+    .hero-section p {
+        font-size: 1.25rem;
+        margin-bottom: 40px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn-browse {
+        background-color: white;
+        color: #000;
+        border: 2px solid #000;
+        border-radius: 30px;
+        padding: 12px 40px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+    }
+
+    .btn-browse:hover {
+        background-color: #f8f9fa;
+        color: #000;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Features Section */
+    .features-section {
+        padding: 80px 0;
+        background-color: #fff;
+    }
+
+    .features-section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    .feature-card {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .feature-icon {
+        font-size: 4rem;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .feature-card h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .feature-card p {
+        font-size: 1rem;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    /* Recent Listings Section */
+    .recent-listings-section {
+        padding: 80px 0;
+        background-color: #f8f9fa;
+    }
+
+    .recent-listings-section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    .listing-card {
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .listing-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+
+    .listing-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .listing-card-body {
+        padding: 20px;
+    }
+
+    .listing-card-body h4 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #000;
+    }
+
+    .listing-card-body p {
+        font-size: 0.9rem;
+        color: #666;
+        margin-bottom: 5px;
+    }
+
+    .listing-card-body .condition-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .condition-completely_new {
+        background-color: #d4edda;
+        color: #155724;
+    }
+
+    .condition-almost_new {
+        background-color: #d1ecf1;
+        color: #0c5460;
+    }
+
+    .condition-worn_down {
+        background-color: #fff3cd;
+        color: #856404;
+    }
+
+    .btn-see-all {
+        background-color: #7c9eb2;
+        color: white;
+        border: 2px solid #7c9eb2;
+        border-radius: 30px;
+        padding: 12px 40px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-decoration: none;
+        display: inline-block;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+    }
+
+    .btn-see-all:hover {
+        background-color: #6a8a9c;
+        border-color: #6a8a9c;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Bottom Image Section */
+    .bottom-image-section {
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .bottom-image-section img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>
+
+<!-- Hero Section -->
+<div class="hero-section">
+    <div class="container">
+        <h1>Furniture Made Easy for GT<br>Students</h1>
+        <p>Buy and sell furniture fast during move-in and move-out seasons. No Facebook chaos. No scammy strangers. For Georgia Tech students only.</p>
+        <a href="/shop/" class="btn-browse">Browse Listings</a>
+    </div>
+</div>
+
+<!-- Features Section -->
+<div class="features-section">
+    <div class="container">
+        <h2>Why Nestd?</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <span class="feature-icon">👥</span>
+                    <h3>Student-Only Listings</h3>
+                    <p>Every user is verified with a @gatech.edu email.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <span class="feature-icon">💲</span>
+                    <h3>Save Hundreds</h3>
+                    <p>Buy quality items for 70% less than retail, directly from other students.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <span class="feature-icon">♻️</span>
+                    <h3>Zero Waste, Full Circle</h3>
+                    <p>Sell your stuff instead of dumping it. Good for you, great for the planet.</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="feature-card">
+                    <span class="feature-icon">🔍</span>
+                    <h3>A Perfect Match</h3>
+                    <p>Find exactly what you need with carefully curated listings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Recent Listings Section -->
+<div class="recent-listings-section">
+    <div class="container">
+        <h2>Recent Listings</h2>
+        <div class="row">
+            {% if recent_listings %}
+                {% for listing in recent_listings %}
+                <div class="col-md-4">
+                    <a href="/shop/" style="text-decoration: none; color: inherit;">
+                        <div class="listing-card">
+                            {% if listing.photo %}
+                                <img src="{{ listing.photo.url }}" alt="{{ listing.title }}">
+                            {% else %}
+                                <img src="{% static 'placeholder.jpg' %}" alt="{{ listing.title }}">
+                            {% endif %}
+                            <div class="listing-card-body">
+                                <h4>{{ listing.title }}</h4>
+                                <p>
+                                    {% if listing.is_free %}
+                                        <strong>Free</strong>
+                                    {% else %}
+                                        <strong>${{ listing.price }}</strong>
+                                    {% endif %}
+                                </p>
+                                <p><strong>Type:</strong> {{ listing.product_type }}</p>
+                                <span class="condition-badge condition-{{ listing.condition }}">
+                                    {{ listing.get_condition_display }}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="col-12 text-center">
+                    <p class="text-muted">No listings available yet. Be the first to post!</p>
+                </div>
+            {% endif %}
+        </div>
+        <div class="text-center">
+            <a href="/shop/" class="btn-see-all">See All Listings</a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
