@@ -14,6 +14,10 @@
       "dest": "/staticfiles/favicon.ico"
     },
     {
+      "src": "/favicon.png",
+      "dest": "/staticfiles/favicon.png"
+    },
+    {
       "src": "/static/(.*)",
       "dest": "/staticfiles/$1"
     },
